@@ -21,6 +21,8 @@ def main(input_filepath, output_filepath):
         os.mkdir("../../data/processed")
         os.mkdir("../../data/interim")
         os.mkdir("../../data/external")
+        os.mkdir("../../data/processed/tables")
+        os.mkdir("../../data/processed/figures")
     print(os.getcwd())
     # Check if gene expression file was already downloaded, if not in data/raw directory then download file from S3
     if(not os.path.exists(out_file)):
