@@ -42,5 +42,5 @@ def main(input_filepath, output_filepath):
 if __name__ == '__main__':
     
     input_url = "https://s3.amazonaws.com/mssm-seq-matrix/human_matrix_v9.h5"
-    output_filepath = "../../data/raw/human_matrix.h5"
+    output_filepath = "../../data/raw/human_matrix_v9.h5"
     main(input_url, output_filepath)
