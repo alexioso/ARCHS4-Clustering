@@ -17,13 +17,19 @@ def main(input_filepath, output_filepath):
 
     if not os.path.isdir("../../data"):
         os.mkdir("../../data")
+    if not os.path.isdir("../../data/raw"):
         os.mkdir("../../data/raw")
+    if not os.path.isdir("../../data/processed"):
         os.mkdir("../../data/processed")
+    if not os.path.isdir("../../data/interim"):
         os.mkdir("../../data/interim")
+    if not os.path.isdir("../../data/external"):
         os.mkdir("../../data/external")
+    if not os.path.isdir("../../data/processed/tables"):
         os.mkdir("../../data/processed/tables")
+    if not os.path.isdir("../../data/processed/figures"):
         os.mkdir("../../data/processed/figures")
-    print(os.getcwd())
+    
     # Check if gene expression file was already downloaded, if not in data/raw directory then download file from S3
     if(not os.path.exists(out_file)):
         print("Downloading compressed gene expression matrix.")
